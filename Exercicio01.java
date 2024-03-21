@@ -8,7 +8,7 @@ public class Exercicio01{
             aluno.nota[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + " do Aluno " + aluno.nome + " :");
         }
 
-        double notaMedia = Aluno.notaMedia(aluno.nota);
+        double notaMedia = aluno.notaMedia(aluno.nota);
 
         Prompt.imprimir("A média do Aluno " + aluno.nome + " é: " + notaMedia);
     }
