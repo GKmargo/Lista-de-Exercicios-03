@@ -1,8 +1,10 @@
 public class Aluno{
-    
-    public static double notaMedia (double[] nota){
+    public String nome;
+    public double[] nota = new double[3];
+
+    public static double notaMedia(double[] nota) {
         double media = 0;
-        for (int i = 0; i < 3; i ++){
+        for (int i = 0; i < 3; i++) {
             media += nota[i] / 3;
         }
         return media;

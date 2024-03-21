@@ -1,14 +1,15 @@
 public class Exercicio01{
-    public static void executar(){
-        double[] nota = new double[3];
+    public static void executar() {
+        Aluno aluno = new Aluno();
 
-        String nome = Prompt.lerLinha("Digite o nome do aluno:");
+        aluno.nome = Prompt.lerLinha("Digite o nome do aluno:");
 
-        for(int i = 0; i < 3; i ++){
-            nota[i] = Prompt.lerDecimal("Digite a nota " + (i+1) + " do Aluno " + nome + " :");
+        for (int i = 0; i < 3; i++) {
+            aluno.nota[i] = Prompt.lerDecimal("Digite a nota " + (i + 1) + " do Aluno " + aluno.nome + " :");
         }
 
-        Prompt.imprimir("A media do Aluno " + nome + " é: " + Aluno.notaMedia(nota));
+        double notaMedia = Aluno.notaMedia(aluno.nota);
 
+        Prompt.imprimir("A média do Aluno " + aluno.nome + " é: " + notaMedia);
     }
 }
