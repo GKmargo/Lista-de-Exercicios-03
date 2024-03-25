@@ -9,6 +9,7 @@ public class Exercicio14 {
             
             double precoVenda = Prompt.lerDecimal("Digite o preço de venda do produto " + (i + 1) + ":");
             
+            // Cria um novo objeto 'Produto' e atribui o preço de custo e o preço de venda
              produtos[i] = new Produto();
              produtos[i].precoCusto = precoCusto;
              produtos[i].precoVenda = precoVenda;
